@@ -1,0 +1,326 @@
+
+{
+    
+    "results": [
+      {
+        "index": "chaotic-evil",
+        "name": "Chaotic Evil",
+        "url": "/api/alignments/chaotic-evil"
+      },
+      {
+        "index": "chaotic-good",
+        "name": "Chaotic Good",
+        "url": "/api/alignments/chaotic-good"
+      },
+      {
+        "index": "chaotic-neutral",
+        "name": "Chaotic Neutral",
+        "url": "/api/alignments/chaotic-neutral"
+      },
+      {
+        "index": "lawful-evil",
+        "name": "Lawful Evil",
+        "url": "/api/alignments/lawful-evil"
+      },
+      {
+        "index": "lawful-good",
+        "name": "Lawful Good",
+        "url": "/api/alignments/lawful-good"
+      },
+      {
+        "index": "lawful-neutral",
+        "name": "Lawful Neutral",
+        "url": "/api/alignments/lawful-neutral"
+      },
+      {
+        "index": "neutral",
+        "name": "Neutral",
+        "url": "/api/alignments/neutral"
+      },
+      {
+        "index": "neutral-evil",
+        "name": "Neutral Evil",
+        "url": "/api/alignments/neutral-evil"
+      },
+      {
+        "index": "neutral-good",
+        "name": "Neutral Good",
+        "url": "/api/alignments/neutral-good"
+      },
+      {
+        "index": "chaotic-evil",
+        "name": "Chaotic Evil",
+        "url": "/api/alignments/chaotic-evil"
+      },
+      {
+        "index": "chaotic-good",
+        "name": "Chaotic Good",
+        "url": "/api/alignments/chaotic-good"
+      },
+      {
+        "index": "chaotic-neutral",
+        "name": "Chaotic Neutral",
+        "url": "/api/alignments/chaotic-neutral"
+      },
+      {
+        "index": "lawful-evil",
+        "name": "Lawful Evil",
+        "url": "/api/alignments/lawful-evil"
+      },
+      {
+        "index": "lawful-good",
+        "name": "Lawful Good",
+        "url": "/api/alignments/lawful-good"
+      },
+      {
+        "index": "lawful-neutral",
+        "name": "Lawful Neutral",
+        "url": "/api/alignments/lawful-neutral"
+      },
+      {
+        "index": "neutral",
+        "name": "Neutral",
+        "url": "/api/alignments/neutral"
+      },
+      {
+        "index": "neutral-evil",
+        "name": "Neutral Evil",
+        "url": "/api/alignments/neutral-evil"
+      },
+      {
+        "index": "neutral-good",
+        "name": "Neutral Good",
+        "url": "/api/alignments/neutral-good"
+      },
+      {
+        "index": "barbarian",
+        "name": "Barbarian",
+        "url": "/api/classes/barbarian"
+      },
+      {
+        "index": "bard",
+        "name": "Bard",
+        "url": "/api/classes/bard"
+      },
+      {
+        "index": "cleric",
+        "name": "Cleric",
+        "url": "/api/classes/cleric"
+      },
+      {
+        "index": "druid",
+        "name": "Druid",
+        "url": "/api/classes/druid"
+      },
+      {
+        "index": "fighter",
+        "name": "Fighter",
+        "url": "/api/classes/fighter"
+      },
+      {
+        "index": "monk",
+        "name": "Monk",
+        "url": "/api/classes/monk"
+      },
+      {
+        "index": "paladin",
+        "name": "Paladin",
+        "url": "/api/classes/paladin"
+      },
+      {
+        "index": "ranger",
+        "name": "Ranger",
+        "url": "/api/classes/ranger"
+      },
+      {
+        "index": "rogue",
+        "name": "Rogue",
+        "url": "/api/classes/rogue"
+      },
+      {
+        "index": "sorcerer",
+        "name": "Sorcerer",
+        "url": "/api/classes/sorcerer"
+      },
+      {
+        "index": "warlock",
+        "name": "Warlock",
+        "url": "/api/classes/warlock"
+      },
+      {
+        "index": "wizard",
+        "name": "Wizard",
+        "url": "/api/classes/wizard"
+      },
+      {
+        "index": "abyssal",
+        "name": "Abyssal",
+        "url": "/api/languages/abyssal"
+      },
+      {
+        "index": "celestial",
+        "name": "Celestial",
+        "url": "/api/languages/celestial"
+      },
+      {
+        "index": "common",
+        "name": "Common",
+        "url": "/api/languages/common"
+      },
+      {
+        "index": "deep-speech",
+        "name": "Deep Speech",
+        "url": "/api/languages/deep-speech"
+      },
+      {
+        "index": "draconic",
+        "name": "Draconic",
+        "url": "/api/languages/draconic"
+      },
+      {
+        "index": "dwarvish",
+        "name": "Dwarvish",
+        "url": "/api/languages/dwarvish"
+      },
+      {
+        "index": "elvish",
+        "name": "Elvish",
+        "url": "/api/languages/elvish"
+      },
+      {
+        "index": "giant",
+        "name": "Giant",
+        "url": "/api/languages/giant"
+      },
+      {
+        "index": "gnomish",
+        "name": "Gnomish",
+        "url": "/api/languages/gnomish"
+      },
+      {
+        "index": "goblin",
+        "name": "Goblin",
+        "url": "/api/languages/goblin"
+      },
+      {
+        "index": "halfling",
+        "name": "Halfling",
+        "url": "/api/languages/halfling"
+      },
+      {
+        "index": "infernal",
+        "name": "Infernal",
+        "url": "/api/languages/infernal"
+      },
+      {
+        "index": "orc",
+        "name": "Orc",
+        "url": "/api/languages/orc"
+      },
+      {
+        "index": "primordial",
+        "name": "Primordial",
+        "url": "/api/languages/primordial"
+      },
+      {
+        "index": "sylvan",
+        "name": "Sylvan",
+        "url": "/api/languages/sylvan"
+      },
+      {
+        "index": "undercommon",
+        "name": "Undercommon",
+        "url": "/api/languages/undercommon"
+      },
+      {
+        "index": "acrobatics",
+        "name": "Acrobatics",
+        "url": "/api/skills/acrobatics"
+      },
+      {
+        "index": "animal-handling",
+        "name": "Animal Handling",
+        "url": "/api/skills/animal-handling"
+      },
+      {
+        "index": "arcana",
+        "name": "Arcana",
+        "url": "/api/skills/arcana"
+      },
+      {
+        "index": "athletics",
+        "name": "Athletics",
+        "url": "/api/skills/athletics"
+      },
+      {
+        "index": "deception",
+        "name": "Deception",
+        "url": "/api/skills/deception"
+      },
+      {
+        "index": "history",
+        "name": "History",
+        "url": "/api/skills/history"
+      },
+      {
+        "index": "insight",
+        "name": "Insight",
+        "url": "/api/skills/insight"
+      },
+      {
+        "index": "intimidation",
+        "name": "Intimidation",
+        "url": "/api/skills/intimidation"
+      },
+      {
+        "index": "investigation",
+        "name": "Investigation",
+        "url": "/api/skills/investigation"
+      },
+      {
+        "index": "medicine",
+        "name": "Medicine",
+        "url": "/api/skills/medicine"
+      },
+      {
+        "index": "nature",
+        "name": "Nature",
+        "url": "/api/skills/nature"
+      },
+      {
+        "index": "perception",
+        "name": "Perception",
+        "url": "/api/skills/perception"
+      },
+      {
+        "index": "performance",
+        "name": "Performance",
+        "url": "/api/skills/performance"
+      },
+      {
+        "index": "persuasion",
+        "name": "Persuasion",
+        "url": "/api/skills/persuasion"
+      },
+      {
+        "index": "religion",
+        "name": "Religion",
+        "url": "/api/skills/religion"
+      },
+      {
+        "index": "sleight-of-hand",
+        "name": "Sleight of Hand",
+        "url": "/api/skills/sleight-of-hand"
+      },
+      {
+        "index": "stealth",
+        "name": "Stealth",
+        "url": "/api/skills/stealth"
+      },
+      {
+        "index": "survival",
+        "name": "Survival",
+        "url": "/api/skills/survival"
+      }
+    ]
+  }
