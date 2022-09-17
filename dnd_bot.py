@@ -15,9 +15,14 @@ class Dnd_Bot:
         """
         Reads json file containing url endpoints 
         """
-        with open('url_builder_data.json') as f:
-            self.data = json.load(f)
-        return
+        try:
+            with open('url_builder_data.json') as f:
+                self.data = json.load(f)
+            return
+        except FileNotFoundError as e:
+            print("Sorry, file not found",e)
+        except Exception as e:
+            print(e)
     
     def random_url_data(self):
         """
@@ -40,10 +45,13 @@ class Dnd_Bot:
         """
         Hits dnd5eapi and returns Dnd fact
         """
-        r: dict = requests.get(self.url)
-        self.fact = r.json()
-        return
-    
+        try:
+            r: dict = requests.get(self.url)
+            self.fact = r.json()
+            return
+        except requests.ConnectionError as e:
+            print("Network error, can not connect to dnd5eapi.co",e)
+            
     def __str__(self):
         """
         Returns name and description
