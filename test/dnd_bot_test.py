@@ -27,7 +27,7 @@ def test_request_url_return(url_setup, url_request_return ):
     
 def test_json_data_url(url_part):
     fact1 = Dnd_Bot()
-    fact1.import_url_from_json()
+    fact1.retrieve_url()
     assert fact1.data['results'][0]['url'] == '/api/alignments/chaotic-evil'
     
 @pytest.fixture
