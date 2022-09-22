@@ -1,7 +1,13 @@
 import requests
 import json
 import random
-    
+import hikari
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+
+
 class Dnd_Bot:
     # TODO: Clean up output data
     def __init__(self, url_endpoint=None, data=None, url="", fact=None):
@@ -10,12 +16,17 @@ class Dnd_Bot:
         self.data: dict = data
         self.url_endpoint: str = url_endpoint
         
+    def bot_run(self):
+        
+        TOKEN = os.getenv("DISCORD_TOKEN")
+        bot = hikari.GatewayBot(token=TOKEN)
+        bot.run()  
     
     def retrieve_url(self):
         """
         Reads json file containing url endpoints 
         """
-        try:
+        try: 
             with open('url_builder_data.json') as f:
                 self.data = json.load(f)
             return
@@ -60,9 +71,10 @@ class Dnd_Bot:
 
 if __name__ == '__main__':
     fact1 = Dnd_Bot()
-    fact1.retrieve_url()
-    fact1.random_url_data()
-    fact1.url_builder()
-    fact1.fact_request()
-    print(fact1.url)
-    print(fact1.__str__())
+    fact1.bot_run()
+    # fact1.retrieve_url()
+    # fact1.random_url_data()
+    # fact1.url_builder()
+    # fact1.fact_request()
+    # print(fact1.url)
+    # print(fact1.__str__())
