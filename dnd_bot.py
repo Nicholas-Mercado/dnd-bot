@@ -17,21 +17,6 @@ class Dnd_Bot:
         self.data: dict = data
         self.url_endpoint: str = url_endpoint
         
-    def bot_run(self):
-        
-        TOKEN = os.getenv("DISCORD_TOKEN")
-        bot = lightbulb.BotApp(token=TOKEN, )
-        @bot.command
-        @lightbulb.command("fact", "pong")
-        @lightbulb.implements(lightbulb.SlashCommand)
-        async def ping(ctx):
-            await ctx.respond(fact1.__str__())
-        
-            
-        bot.run()
-    
-      
-    
     def retrieve_url(self):
         """
         Reads json file containing url endpoints 
@@ -49,7 +34,7 @@ class Dnd_Bot:
         """
         Randomly chooses and returns url endpoint
         """
-        random_number = random.randint(1, 417)
+        random_number = random.randint(1, 388)
         self.url_endpoint = self.data['results'][random_number]['url']
         return    
         
@@ -78,13 +63,22 @@ class Dnd_Bot:
         Returns name and description
         """
         return self.fact["name"], self.fact["desc"]
+    
+    def bot_run(self):
+        
+        TOKEN = os.getenv("DISCORD_TOKEN")
+        bot = lightbulb.BotApp(token=TOKEN, )
+        @bot.command
+        @lightbulb.command("fact", "pong")
+        @lightbulb.implements(lightbulb.SlashCommand)
+        async def ping(ctx):
+            self.retrieve_url()
+            self.random_url_data()
+            self.url_builder()
+            self.fact_request()
+            await ctx.respond(self.__str__())
+        bot.run()
 
 if __name__ == '__main__':
-    fact1 = Dnd_Bot()
-    fact1.retrieve_url()
-    fact1.random_url_data()
-    fact1.url_builder()
-    fact1.fact_request()
-    print(fact1.url)
-    # print(fact1.__str__())
-    fact1.bot_run()
+    fact = Dnd_Bot()
+    fact.bot_run()
