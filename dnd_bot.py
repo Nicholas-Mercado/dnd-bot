@@ -3,6 +3,7 @@ import json
 import random
 import lightbulb
 import os
+import re
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -62,7 +63,8 @@ class Dnd_Bot:
         """
         Returns name and description
         """
-        return self.fact["name"], self.fact["desc"]
+        desc = re.sub(r'[\[\]]', r'', str(self.fact["desc"]))
+        return "DND Fact ----> {} , {}".format(self.fact["name"], desc)
     
     def bot_run(self):
         
@@ -82,3 +84,4 @@ class Dnd_Bot:
 if __name__ == '__main__':
     fact = Dnd_Bot()
     fact.bot_run()
+    
