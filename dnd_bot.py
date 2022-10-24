@@ -11,7 +11,7 @@ load_dotenv()
         
 
 class Dnd_Bot:
-    # TODO: Clean up output data
+    
     def __init__(self, url_endpoint=None, data=None, url="", fact=None):
         self.fact: dict = fact
         self.url: str = url
@@ -55,10 +55,13 @@ class Dnd_Bot:
         try:
             r: dict = requests.get(self.url)
             self.fact = r.json()
+            if len(self.fact["desc"][0]) > 1900:
+                self.fact_request()
             return
         except requests.ConnectionError as e:
             print("Network error, can not connect to dnd5eapi.co",e)
             
+        
     def __str__(self):
         """
         Returns name and description
