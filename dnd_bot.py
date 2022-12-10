@@ -66,7 +66,10 @@ class Dnd_Bot:
         Returns name and description
         """
         desc = re.sub(r'[\[\]]', r'', str(self.fact["desc"]))
-        return "DND Fact ----> {} , {}".format(self.fact["name"], desc)
+        response = "DND Fact ----> {} , {}".format(self.fact["name"], desc)
+        if len(response) > 2000:
+            response = response[:2000] + "..."
+        return response
     
     def bot_run(self):
         
