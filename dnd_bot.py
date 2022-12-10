@@ -41,16 +41,15 @@ class Dnd_Bot:
         
         
     def url_builder(self):
-        """
-        Takes in json data and builds url
-        """
+        """Accepts JSON data and constructs a URL."""
+        
         api_url_base = "https://www.dnd5eapi.co"
         self.url =  api_url_base + self.url_endpoint
         return
         
     def fact_request(self, url=None):
         """
-        Hits dnd5eapi and returns Dnd fact
+        Sends a request to dnd5eapi and returns a D&D fact.
         """
         try:
             r: dict = requests.get(self.url)
@@ -73,6 +72,15 @@ class Dnd_Bot:
         
         TOKEN = os.getenv("DISCORD_TOKEN")
         bot = lightbulb.BotApp(token=TOKEN, )
+        
+        # Add a /help command
+        @bot.command
+        @lightbulb.command("help", "description")
+        @lightbulb.implements(lightbulb.SlashCommand)
+        async def help_command(ctx):
+            # Return a message with instructions on how to use the bot
+            await ctx.respond("To get a random D&D fact, use the `/fact` command.")
+        
         @bot.command
         @lightbulb.command("fact", "pong")
         @lightbulb.implements(lightbulb.SlashCommand)
