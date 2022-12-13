@@ -1,7 +1,8 @@
 # D&D Bot
 
 A simple Discord bot that retrieves and displays random facts about Dungeons and Dragons (D&D).
-Installation
+
+## Installation
 
 To use this bot, you will need to have Python 3 installed on your system. You will also need to create a Discord bot token and add it to a .env file in the root directory of this project.
 
